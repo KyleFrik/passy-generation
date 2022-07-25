@@ -20,6 +20,9 @@ body {
   background-color: #779FA1;
 }
 
+body h2 {
+  text-decoration: underline;
+}
 .password__form {
   padding: 30px;
   background-color: white;
@@ -51,10 +54,9 @@ body {
   padding: 0.5em;
 }
 
-#input-flex 
-  .left {
-    flex-grow: 1;
-  }
+#input-flex .left {
+  flex-grow: 1;
+}
 
 i {
   cursor: pointer;
@@ -108,7 +110,7 @@ label {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb{
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -131,6 +133,9 @@ label {
   text-align: center;
 }
 
+.checkbox__inputs input {
+  background-color: #04aa6d;
+}
 
 .copy__btn {
   display: block;
@@ -161,17 +166,17 @@ label {
 
 
 /* For mobile phones: */
-@media only screen and (max-width: 650px) {
-  .password__form{
+@media only screen and (max-width: 700px) {
+  .password__form {
     width: 300px;
     display: block;
-    padding: 50px;
+    padding: 20px;
   }
 
   .password__inputs {
     max-width: 100%;
     overflow-wrap: break-word;
-    
+    font-size: 12px;
   }
 
   .settings {
@@ -193,5 +198,9 @@ label {
 
   .slider {
     display: block;
+  }
+
+  .copy__btn {
+    width: 200px
   }
 }

@@ -49,7 +49,7 @@ export default function Form() {
     // Main form funcionality 
     return (
         <form className="password__form" onChange={handleSubmit}>
-            <h2>Generate Secure Password</h2>
+            <h2>Generate a Random Secure Password</h2>
             <div id="input-flex" className="password__inputs">
                 <div className="password__text left">{password}</div>
                 <i className="fa fa-refresh fa-spin fa-2x my-icon right" aria-hidden="true" onClick={handleSubmit}></i>
@@ -92,7 +92,7 @@ export default function Form() {
 
             <div className="count">Length: {passwordlength}</div>
 
-            <btn className="copy__btn" onClick={() => {notify(); copyToClipboard();}} id="animate.css">
+            <btn className="copy__btn" onClick={() => { notify(); copyToClipboard(); }} id="animate.css">
                 Copy Password
             </btn>
             <ToastContainer />
