@@ -35,11 +35,12 @@ body {
   padding: 0 10px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 0.3rem;
-  min-width: 75ch;
+  width: 75ch;
   display: flex;
   margin: 1em 0;
   align-items: center;
   overflow: hidden;
+  hyphens: auto;
 }
 
 .left {
@@ -54,7 +55,6 @@ body {
   .left {
     flex-grow: 1;
   }
-
 
 i {
   cursor: pointer;
@@ -160,3 +160,38 @@ label {
 }
 
 
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .password__form{
+    width: 45ch;
+    display: block;
+  }
+
+  .password__inputs {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    
+  }
+
+  .settings {
+    display: block;
+    width: 100%;
+  }
+
+  .settings div {
+    width: 100%;
+  }
+
+  .checkbox__inputs {
+    margin-top: 20px;
+  }
+
+  .count {
+    margin-top: 15px;
+  }
+
+  .slider {
+    display: block;
+  }
+}
