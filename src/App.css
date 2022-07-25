@@ -161,10 +161,10 @@ label {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .password__form{
-    width: 45ch;
+    width: 30sch;
     display: block;
   }
 
